@@ -28,44 +28,64 @@
         <li><a href="./login.html">Login</a></li>
       </ul>
     </nav>
+
     <!-- content -->
     <main>
-      <div class="style-2">
-        <div>
-          <table>
-            <tr>
-              <th colspan="3" class="table-content">Student Information</th>
-            </tr>
-            <tr>
-              <th>Name</th>
-              <th>ID</th>
-              <th>Department</th>
-            </tr>
-            <tr>
-              <td>Md Emon</td>
-              <td>1002</td>
-              <td rowspan="3">CSE</td>
-            </tr>
-            <tr>
-              <td>Md Munju</td>
-              <td>1049</td>
-            </tr>
-            <tr>
-              <td>Md Tamim</td>
-              <td>1005</td>
-            </tr>
-          </table>
-        </div>
-
-        <div class="style-3">
-          <img
-            class="img-1"
-            src="./wide-angle-shot-single-tree-growing-clouded-sky-sunset-surrounded-by-grass_181624-22807.avif"
-            alt="wild-image"
+      <div class="login-form-container">
+        <h2>Login</h2>
+        <form action="#" method="POST" class="login-form">
+          <label for="name">Student Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            maxlength="20"
+            required
           />
-        </div>
+
+          <label for="studentId">Student ID:</label>
+          <input
+            type="text"
+            id="studentId"
+            name="studentId"
+            placeholder="Enter your ID"
+            required
+          />
+
+          <label for="email">Student Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your password"
+            maxlength="20"
+            required
+          />
+
+          <label for="department">Department:</label>
+          <input
+            type="text"
+            id="department"
+            name="department"
+            placeholder="Enter your department"
+            required
+          />
+
+          <button type="submit" class="submit-btn">Login</button>
+        </form>
       </div>
     </main>
+
     <footer>
       <div class="footer-content">
         <ul class="social-links">
