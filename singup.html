@@ -34,6 +34,7 @@
       .custom-hover:hover {
         background-color: #c6c025 !important;
         color: black !important;
+        padding: 10px;
       }
       footer {
         background-color: #0044cc;
@@ -63,35 +64,54 @@
     </header>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg mt-3 bg-primary">
-      <div class="container justify-content-center">
-        <ul class="navbar-nav gap-3 fs-5">
-          <li class="nav-item">
-            <a class="nav-link custom-hover active text-white" href="./"
-              >Home</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link custom-hover text-white" href="./about.html"
-              >About</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link custom-hover text-white" href="./library.html"
-              >Library</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link custom-hover text-white" href="./contact.html"
-              >Contact</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link custom-hover text-white" href="./singup.html"
-              >SignUp</a
-            >
-          </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg bg-primary mt-3">
+      <div class="container">
+        <!-- Toggler button for small screens -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible content -->
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-3 fs-5">
+            <li class="nav-item">
+              <a class="nav-link custom-hover active text-white" href="./"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link custom-hover text-white" href="./about.html"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link custom-hover text-white" href="./library.html"
+                >Library</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link custom-hover text-white" href="./contact.html"
+                >Contact</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link custom-hover text-white" href="./singup.html"
+                >SignUp</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 

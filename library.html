@@ -32,9 +32,10 @@
     main {
       flex: 1;
     }
-    .custom-hover {
-      transition: background-color 0.3s ease;
-      border-radius: 5px;
+    .custom-hover:hover {
+      background-color: #c6c025 !important;
+      color: black !important;
+      padding: 10px;
     }
     nav {
       margin-top: 4px;
@@ -83,42 +84,55 @@
     </header>
 
     <!-- Navigation -->
-    <nav class="bg-primary">
-      <ul class="nav justify-content-center py-2 fs-5">
-        <li class="nav-item">
-          <a class="nav-link text-white custom-hover fw-semibold" href="./"
-            >Home</a
-          >
-        </li>
-        <li class="nav-item">
-          <a
-            class="nav-link text-white custom-hover fw-semibold"
-            href="./about.html"
-            >About</a
-          >
-        </li>
-        <li class="nav-item">
-          <a
-            class="nav-link text-white custom-hover fw-semibold"
-            href="./library.html"
-            >Library</a
-          >
-        </li>
-        <li class="nav-item">
-          <a
-            class="nav-link text-white custom-hover fw-semibold"
-            href="./contact.html"
-            >Contact</a
-          >
-        </li>
-        <li class="nav-item">
-          <a
-            class="nav-link text-white custom-hover fw-semibold"
-            href="./singup.html"
-            >Sign Up</a
-          >
-        </li>
-      </ul>
+    <nav class="navbar navbar-expand-lg bg-primary mt-3">
+      <div class="container">
+        <!-- Toggler button for small screens -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible content -->
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-3 fs-5">
+            <li class="nav-item">
+              <a class="nav-link custom-hover active text-white" href="./"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link custom-hover text-white" href="./about.html"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link custom-hover text-white" href="./library.html"
+                >Library</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link custom-hover text-white" href="./contact.html"
+                >Contact</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link custom-hover text-white" href="./singup.html"
+                >SignUp</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
     <!-- Main Content -->
